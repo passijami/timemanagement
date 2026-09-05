@@ -2,4 +2,4 @@
 Tämä on Helsingin yliopiston Tietojenkäsittelytieteen kandiohjelman Algoritmit ja tekoäly -kurssilla suoritettava sovellus ajanhallinnan tehostamiseksi.
 
 # Dokumentaatio
-[Määrittelydokumentti.md](docs/)
+[Määrittelydokumentti](docs/Määrittelydokumentti.md)
