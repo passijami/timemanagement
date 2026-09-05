@@ -3,8 +3,7 @@ Helsingin yliopiston Aineopintojen harjoitustyö: Algoritmit ja tekoäly.
 Suoritan kurssin syksyllä 2026 Tietojenkäsittelytieteen kandiohjelmassa (TKT).
 
 ## Aihe ja toteutus
-Harjoitustyössä toteutetaan Pythonilla algoritmikokonaisuus, jonka tavoitteena on löytää mahdollisimman tehokas aikataulu annetuista tehtävistä.  
-Työssä vertaillaan kolmea erilaista lähestymistapaa:  
+Harjoitustyössä toteutetaan Pythonilla algoritmikokonaisuus, jonka tavoitteena on löytää mahdollisimman tehokas aikataulu annetuista tehtävistä. Työssä vertaillaan kolmea erilaista lähestymistapaa:  
 
 - täydellinen haku
 - ahne algoritmi
