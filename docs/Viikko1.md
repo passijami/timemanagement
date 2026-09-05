@@ -1,1 +1,11 @@
+# Viikkoraportti 1
 
+Ensimmäisellä viikolla keskityin ennen kaikkea harjoitustyöni aiheen suunnitteluun ja rajaamiseen sekä kurssimateriaalien tutustumiseen. Aiheeksi valikoitui tehtävien ja ajankäytön optimointi, sillä halusin tehdä projektin aiheesta, jossa yhdistyy tehokkuus ja käytännöllisyys. Tutustuin aihe-ehdotuksiin ja kysyin jopa tekoälyltä ideoita. Claude antoi mielenkiintoisen ehdotuksen nimenomaan aikataulutukseen liittyvästä sovelluksesta, josta sain sitten idean lähteä kehittämään projektin, joka keskittyy enemmän ajankäytön ja tehokkuuden maksimointiin. Tekoälyä käytin ensimmäisellä viikolla vain aihe-ehdotusten etsimiseen, sillä en kokenut tarvetta hyödyntää sitä vielä muuhun.
+
+Ohjelman puolella en ole vielä aloittanut varsinaista koodaamista, koska tämä viikko kului aiheen ymmärtämiseen, rajaamiseen ja suunnitteluun. Kerkesin aloittaa kurssi. suorittamisen vasta loppuviikosta, joten vielä jäi seuraaville viikoille varaa tutustua materiaaleihin. Sain rakenneltua jonkinlaisen kokonaisuuden määrittelydokumentille, mutta  haluaisin vielä täydentää sitä. Seuraava konkreettinen tavoite on pystyttää projektille toimiva runko ja aloittaa ensimmäisen algoritmin toteutus.
+
+Tämän viikon aikana opin myös paremmin ymmärtämään, millaiseen ongelmaluokkaan oma työni liittyy. Ongelma muistuttaa paljon klassisia aikataulutusongelmia. Jos esimerkiksi kaikkien tehtävien kestot olisivat samanlaisia, ongelmaa voitaisiin ratkaista tehokkaammin ahneella algoritmilla. Kun tehtävien kestot kuitenkin vaihtelevat, ongelmasta tulee selvästi haastavampi ja siinä on piirteitä myös repunpakkausongelmasta. Tällöin dynaaminen ohjelmointi on yksi tapa löytää tarkka ratkaisu. 
+
+Eniten epäselvyyttä on tällä hetkellä dynaamisen ohjelmoinnin toteutuksessa. Ymmärrän perusidean, mutta tarkkaa tilasiirtymää en ole vielä vienyt koodin tasolle asti. Se pitää suunnitella tarkemmin ennen toteutuksen aloittamista. Myös ajassa muuttuvan pisteytyksen määrittely vaatii vielä tarkempaa pohdintaa, jotta pisteytys toimii järkevästi erilaisissa tilanteissa eikä tee algoritmien vertailusta tarpeettoman hankalaa.  
+  
+Tuntimäärällisesti, kolmen päivän aikana, käytin tällä viikolla projektiin noin 16 tuntia.
