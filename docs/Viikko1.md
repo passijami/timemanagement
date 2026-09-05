@@ -8,4 +8,4 @@ Tämän viikon aikana opin myös paremmin ymmärtämään, millaiseen ongelmaluo
 
 Eniten epäselvyyttä on tällä hetkellä dynaamisen ohjelmoinnin toteutuksessa. Ymmärrän perusidean, mutta tarkkaa tilasiirtymää en ole vielä vienyt koodin tasolle asti. Se pitää suunnitella tarkemmin ennen toteutuksen aloittamista. Myös ajassa muuttuvan pisteytyksen määrittely vaatii vielä tarkempaa pohdintaa, jotta pisteytys toimii järkevästi erilaisissa tilanteissa eikä tee algoritmien vertailusta tarpeettoman hankalaa.  
   
-Tuntimäärällisesti, kolmen päivän aikana, käytin tällä viikolla projektiin noin 16 tuntia.
+Tuntimäärällisesti, kolmen päivän aikana, käytin tällä viikolla projektiin noin 14 tuntia.
