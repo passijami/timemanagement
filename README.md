@@ -1,5 +1,5 @@
-## Time Management
+# Time Management
 Tämä on Helsingin yliopiston Tietojenkäsittelytieteen kandiohjelman Algoritmit ja tekoäly -kurssilla suoritettava sovellus ajanhallinnan tehostamiseksi.
 
-# Dokumentaatio
+## Dokumentaatio
 [Määrittelydokumentti](docs/Määrittelydokumentti.md)
