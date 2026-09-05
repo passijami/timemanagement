@@ -20,6 +20,6 @@ Sovellus ja dokumentaatio on suomeksi.
 
 
 ## Lähteet
-[Dynaaminen ohjelmointi (Wikipedia)](https://en.wikipedia.org/wiki/Dynamic_programming) 
-[Ahne algoritmi (Wikipedia)](https://en.wikipedia.org/wiki/Greedy_algorithm) 
+[Dynaaminen ohjelmointi (Wikipedia)](https://en.wikipedia.org/wiki/Dynamic_programming)  
+[Ahne algoritmi (Wikipedia)](https://en.wikipedia.org/wiki/Greedy_algorithm)  
 [Täydellinen haku (Wikipedia)](https://en.wikipedia.org/wiki/Brute-force_search)
