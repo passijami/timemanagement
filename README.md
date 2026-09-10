@@ -1,5 +1,5 @@
-# Time Management
-Tämä on Helsingin yliopiston Tietojenkäsittelytieteen kandiohjelman Algoritmit ja tekoäly -kurssilla suoritettava sovellus ajanhallinnan tehostamiseksi.
+# Connect4
+Tämä on Helsingin yliopiston Tietojenkäsittelytieteen kandiohjelman Algoritmit ja tekoäly -kurssilla suoritettava ?.
 
 ## Dokumentaatio
 [Määrittelydokumentti](docs/Määrittelydokumentti.md)  
