@@ -21,5 +21,5 @@ Sovellus ja dokumentaatio on suomeksi.
 
 
 ## Lähteet
-[Connect4 (Wikipedia)](https://en.wikipedia.org/wiki/Connect_Four)
+[Connect4 (Wikipedia)](https://en.wikipedia.org/wiki/Connect_Four)  
 [Minimax (Wikipedia)](https://en.wikipedia.org/wiki/Minimax)
