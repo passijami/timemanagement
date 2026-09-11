@@ -3,7 +3,7 @@ Helsingin yliopiston Aineopintojen harjoitustyö: Algoritmit ja tekoäly.
 Suoritan kurssin syksyllä 2026 Tietojenkäsittelytieteen kandiohjelmassa (TKT).
 
 ## Aihe ja toteutus
-Harjoitustyössä toteutetaan Pythonilla tekoäly Connect4-pelille, jota pelataan 6x7-kokoisella laudalla. Pelaajat pudottavat vuorotellen kiekkoja sarakkeisiin, ja ensimmäinen, joka saa neljä omaa kiekkoa suoraan riviin (vaaka-, pysty- tai vinosuunnassa), voittaa.
+Harjoitustyössä toteutetaan Pythonilla tekoäly Connect4-pelille, jota pelataan 6x7-kokoisella laudalla. Pelaajat pudottavat vuorotellen kiekkoja sarakkeisiin, ja ensimmäinen, joka saa neljä omaa kiekkoa suoraan riviin (vaaka-, pysty- tai vinosuunnassa) voittaa.
 
 Tekoäly perustuu minimax-algoritmiin, jota tehostetaan alfa-beta-karsinnalla. Koska peliä ei yleensä voida laskea loppuun asti kohtuullisessa ajassa, haku pysäytetään tietyn syvyyden jälkeen ja pelitilannetta arvioidaan heuristisella funktiolla. Pelin sovelluslogiikka (lailliset siirrot, siirron tekeminen ja voiton tarkistus) toteutetaan itse ilman valmiita kirjastoja. Suurin osa kehitysajasta käytetään tekoälyyn ja sen tehostamiseen. Käyttöliittymä on yksinkertainen tekstipohjainen, eikä sitä testata.
 
