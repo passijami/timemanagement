@@ -3,21 +3,16 @@ Helsingin yliopiston Aineopintojen harjoitustyö: Algoritmit ja tekoäly.
 Suoritan kurssin syksyllä 2026 Tietojenkäsittelytieteen kandiohjelmassa (TKT).
 
 ## Aihe ja toteutus
-Harjoitustyössä toteutetaan Pythonilla algoritmikokonaisuus, jonka tavoitteena on löytää mahdollisimman tehokas aikataulu annetuista tehtävistä. Työssä vertaillaan kolmea erilaista lähestymistapaa:  
+Harjoitustyössä toteutetaan Pythonilla tekoäly Connect4-pelille, jota pelataan 6x7-kokoisella laudalla. Pelaajat pudottavat vuorotellen kiekkoja sarakkeisiin, ja ensimmäinen, joka saa neljä omaa kiekkoa suoraan riviin (vaaka-, pysty- tai vinosuunnassa), voittaa.
 
-- täydellinen haku
-- ahne algoritmi
-- dynaaminen ohjelmointi
+Tekoäly perustuu minimax-algoritmiin, jota tehostetaan alfa-beta-karsinnalla. Koska peliä ei yleensä voida laskea loppuun asti kohtuullisessa ajassa, haku pysäytetään tietyn syvyyden jälkeen ja pelitilannetta arvioidaan heuristisella funktiolla. Pelin sovelluslogiikka (lailliset siirrot, siirron tekeminen ja voiton tarkistus) toteutetaan itse ilman valmiita kirjastoja. Suurin osa kehitysajasta käytetään tekoälyyn ja sen tehostamiseen. Käyttöliittymä on yksinkertainen tekstipohjainen, eikä sitä testata.
 
-Kaikissa menetelmissä lähtökohtana on sama ongelma. Käytettävissä on yhteensä aikaa T, ja n tehtävästä pitäisi valita sopiva osajoukko sekä niiden suoritusjärjestys siten, että valittujen tehtävien kokonaiskesto pysyy käytettävissä olevan ajan rajoissa ja saavutettu kokonaispistemäärä on mahdollisimman suuri. Suurin osa kehitysajasta käytetään näiden kolmen algoritmin toteuttamiseen, oikeellisuuden testaamiseen ja keskinäiseen vertailuun.  
+Kullakin vuorolla tekoäly valitsee sarakkeen, johon pudottaa oman pelimerkkinsä, niin että valinta on paras mahdollinen annetulla laskenta-ajalla. Minimax-algoritmi käy pelipuuta läpi olettaen, että molemmat pelaajat pelaavat itselleen parhaalla mahdollisella tavalla. Koska koko peliä ei ehditä laskea läpi, käytetään heuristista arviointifunktiota rajallisen syvyyden pelitilanteille, ja haku syvennetään iteratiivisesti niin pitkälle kuin aikaraja sallii.
 
-| Algoritmi | Aika | Tila | Tehtävä | Idea |
-|---|---|---|---|---|
-| Täydellinen haku | O(n!) | O(n) | Käy läpi tehtävien osajoukkojen mahdolliset järjestykset ja valitsee parhaan pistemäärän tuottavan. | Käytössä pienillä syötteillä. | 
-| Ahne algoritmi | O(n log n) | O(n) | Järjestää tehtävät pistemäärä/kesto-suhteen tai deadlinen mukaan ja lisää niitä aikatauluun niin kauan kuin ne mahtuvat jäljellä olevaan aikaan. | Toteutus priority queue:n avulla, jotta löydetään paras seuraava tehtävä. |
-| Dynaaminen ohjelmointi | O(nT) | O(nT), optimoitavissa O(T):hen | Taulukossa on nT solua ja jokainen solu lasketaan vakioajassa edellisten solujen perusteella. | Aikavaativuus noudattaa repunpakkausongelmaa. |  
-
-Jokaisella tehtävällä on nimi, kesto, deadline ja tärkeyteen perustuva pistearvo. Tehtävästä saatava pistemäärä riippuu myös siitä, milloin tehtävä valmistuu. Jos tehtävä valmistuu ajoissa, siitä saa suurimman mahdollisen pistemäärän, kun taas myöhästyminen pienentää saatavaa pistemäärää. Jos tehtävä jätetään kokonaan tekemättä, siitä voidaan lisäksi antaa sakko. Ongelma ei siis ole pelkästään tehtävien järjestäminen, vaan samalla täytyy päättää, mitkä tehtävät kannattaa ylipäätään tehdä. Esimerkiksi pitkä ja paljon aikaa vievä tehtävä voi olla kannattavampaa jättää välistä, jos sen sijaan ehditään tehdä kaksi lyhyempää tehtävää ja saada niistä yhteensä enemmän pisteitä. Rakenteeltaan ongelma muistuttaa yksikoneaikataulutusta sekä repunpakkausongelmaa.
+| Algoritmi | Aikavaativuus | Tilavaativuus | Tehtävä |
+|---|---|---|---|
+| Minimax ilman karsintaa | `O(b^d)` | `O(d)` | Käy rekursiivisesti läpi kaikki mahdolliset siirrot syvyyteen `d` asti. `b` on haarautumiskerroin (max 7 saraketta). |
+| Minimax + karsinta (alfa-beta) | Parhaimmillaan `O(b^(d/2))`, pahimmillaan `O(b^d)` | `O(d)` | Karsii pois haarat, jotka eivät voi enää vaikuttaa lopputulokseen. Hyöty riippuu siitä, kuinka onnistuneesti siirrot on järjestetty. |
 
 ## Projektin kielet
 Käytän työssäni Pythonia.  
@@ -27,3 +22,4 @@ Sovellus ja dokumentaatio on suomeksi.
 
 ## Lähteet
 [Connect4 (Wikipedia)](https://en.wikipedia.org/wiki/Connect_Four)
+[Minimax (Wikipedia)](https://en.wikipedia.org/wiki/Minimax)
