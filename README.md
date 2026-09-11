@@ -1,5 +1,5 @@
 # Connect4
-Tämä on Helsingin yliopiston Tietojenkäsittelytieteen kandiohjelman Algoritmit ja tekoäly -kurssilla suoritettava ?.
+Tämä on Helsingin yliopiston Tietojenkäsittelytieteen kandiohjelman Algoritmit ja tekoäly -kurssilla suoritettava projekti, jossa luon Connect4 -pelille tekoälyn hyödyntämällä minimax-algoritmia.
 
 ## Dokumentaatio
 [Määrittelydokumentti](docs/Määrittelydokumentti.md)  
