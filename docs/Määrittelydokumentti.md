@@ -9,10 +9,16 @@ Tekoäly perustuu minimax-algoritmiin, jota tehostetaan alfa-beta-karsinnalla. K
 
 Kullakin vuorolla tekoäly valitsee sarakkeen, johon pudottaa oman pelimerkkinsä, niin että valinta on paras mahdollinen annetulla laskenta-ajalla. Minimax-algoritmi käy pelipuuta läpi olettaen, että molemmat pelaajat pelaavat itselleen parhaalla mahdollisella tavalla. Koska koko peliä ei ehditä laskea läpi, käytetään heuristista arviointifunktiota rajallisen syvyyden pelitilanteille, ja haku syvennetään iteratiivisesti niin pitkälle kuin aikaraja sallii.
 
+Toimiakseen algoritmi tarvitsee seuraavat tiedot:
+  1. pelitilanne
+  2. käytettävissä oleva laskenta-aika eli iteratiivisen syvenemisen kierrokset ennen siirron palauttamista
+
 | Algoritmi | Aikavaativuus | Tilavaativuus | Tehtävä |
 |---|---|---|---|
 | Minimax ilman karsintaa | `O(b^d)` | `O(d)` | Käy rekursiivisesti läpi kaikki mahdolliset siirrot syvyyteen `d` asti. `b` on haarautumiskerroin (max 7 saraketta). |
 | Minimax + karsinta (alfa-beta) | Parhaimmillaan `O(b^(d/2))`, pahimmillaan `O(b^d)` | `O(d)` | Karsii pois haarat, jotka eivät voi enää vaikuttaa lopputulokseen. Hyöty riippuu siitä, kuinka onnistuneesti siirrot on järjestetty. |
+
+Tilavaativuus on aina `O(d)`, sillä lauta pidetään muistissa yhtenä oliona, ja siirtoja tehdään ja perutaan rekursion edetessä sen sijaan, että lautaa kopioitaisiin jokaisessa rekursion solmussa.
 
 ## Projektin kielet
 Käytän työssäni Pythonia.  
