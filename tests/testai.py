@@ -39,5 +39,5 @@ def test_move_ordering_reduces_node_count():
     Aja sama epäsymmetrinen keskipelin tilanne keskeltä-ulos-
     järjestyksellä ja käänteisessä järjestyksessä samalla
     syvyydellä. Tarkista että solmumäärä on selvästi
-    pienempi kesekltä.ulos-järjestyksellä."""
+    pienempi keskeltä-ulos-järjestyksellä."""
     pytest.skip("TODO")
